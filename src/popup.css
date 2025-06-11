@@ -1,0 +1,136 @@
+/* popup.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.header-title {
+  font-size: 1.5em;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.feature-selection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.feature-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.feature-option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #ecf0f1;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+
+.button.primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.button.primary:hover {
+  background-color: #2980b9;
+}
+
+.status-message {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #4a5568;
+}
+
+/* Styles for dynamically generated input fields */
+#dynamicReplaceInputs .input-group {
+  margin-bottom: 15px;
+}
+
+#dynamicReplaceInputs .input-group label {
+  display: block; /* Ensure labels are on their own line */
+  margin-bottom: 5px;
+}
+
+#dynamicReplaceInputs .input-group input[type="text"] {
+  width: 100%; /* Make inputs fill the container width */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+/* Add a bit of spacing between dynamically generated pairs */
+#dynamicReplaceInputs > div {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#dynamicReplaceInputs > div:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last pair */
+}
+
+.input-group-header {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
