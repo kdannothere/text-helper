@@ -17,6 +17,12 @@ ATTENTION: Could not work at some websites or work not quite properly. Always ch
 2. Turn on Developer Mode in the top right corner
 3. Press load unpacked button and choose "build" directory of this repository
 
+## Build
+
+1. npm install
+2. Install vscode extension: Chrome Extension Developer Tools
+3. run build command by: Show and run commands -> Chrome Extension Build files OR run node ./node_modules/webpack/bin/webpack.js --mode=production --config config/webpack.config.js
+
 ## License
 
 Apache License Version 2.0
