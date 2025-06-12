@@ -3,7 +3,7 @@
 import {
   findAndReplaceTextInFields,
   showSnackbarInContentScript,
-} from "./content_injected_functions.js";
+} from "./replacement_mode.js";
 
 chrome.commands.onCommand.addListener(async (command) => {
   if (command !== "perform_single_action") {
